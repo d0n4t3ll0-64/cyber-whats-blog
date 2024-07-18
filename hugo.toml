@@ -1,4 +1,4 @@
-baseURL = 'https://d0n4t3ll0-64.github.io/cyber-whats-blog/'
+baseURL = 'https://d0n4t3ll0-64.github.io/cyber-whats-public/'
 languageCode = 'en-us'
 title = 'Cyber Whats'
 theme = 'hello-friend-ng'
