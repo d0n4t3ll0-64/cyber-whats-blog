@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cyber Whats</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Cyber Whats</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 Jul 2024 22:42:00 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lame machine HTB</title>
+      <link>//localhost:1313/posts/2024/lame-machine-htb/</link>
+      <pubDate>Wed, 17 Jul 2024 22:42:00 +0300</pubDate>
+      <guid>//localhost:1313/posts/2024/lame-machine-htb/</guid>
+      <description>Introduction Lame is a beginner-level machine from Hack The Box, perfect for those starting their journey in penetration testing. This walkthrough will guide you through the process of compromising the machine, explaining each step and tool used along the way.&#xA;Target IP: 10.129.79.228&#xA;Enumeration Enumeration is the first and crucial step in any penetration test. It involves gathering information about the target system to identify potential vulnerabilities.&#xA;Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports and services:</description>
+    </item>
+    <item>
+      <title>Nibbles Machine HTB</title>
+      <link>//localhost:1313/posts/2024/nibbles-machine-htb/</link>
+      <pubDate>Mon, 15 Jul 2024 18:00:00 +0300</pubDate>
+      <guid>//localhost:1313/posts/2024/nibbles-machine-htb/</guid>
+      <description>Nibbles Machine Nibbles is a fairly simple machine, however with the inclusion of a login blacklist, it is a fair bit more challenging to find valid credentials. Luckily, a username can be enumerated and guessing the correct password does not take long for most.&#xA;Enumeration We need to start by mapping the target network. To do this, we&amp;rsquo;ll use Nmap with several flags:&#xA;The -sV flag helps us get the service versions running on the ports.</description>
+    </item>
+  </channel>
+</rss>
