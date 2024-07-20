@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/tags/computer-crash/</loc>
+    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
+  </url><url>
+    <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/tags/crowdstrike/</loc>
+    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
+  </url><url>
+    <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/news/news-crowdstrike-hack/</loc>
+    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
+  </url><url>
     <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/</loc>
-    <lastmod>2024-07-17T22:42:00+03:00</lastmod>
+    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
+  </url><url>
+    <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/tags/news/</loc>
+    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
+  </url><url>
+    <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/news/</loc>
+    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
+  </url><url>
+    <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/tags/</loc>
+    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
     <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/posts/2024/lame-machine-htb/</loc>
     <lastmod>2024-07-17T22:42:00+03:00</lastmod>
@@ -15,7 +33,5 @@
     <lastmod>2024-07-15T18:00:00+03:00</lastmod>
   </url><url>
     <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/categories/</loc>
-  </url><url>
-    <loc>https://d0n4t3ll0-64.github.io/cyber-whats-public/tags/</loc>
   </url>
 </urlset>
