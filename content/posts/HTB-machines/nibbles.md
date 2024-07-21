@@ -1,12 +1,8 @@
 ---
 title: 'Nibbles Machine HTB'
-cover: /nibbles-machine/nibbles-logo.png
+cover: ./nibbles-machine/nibbles-logo.png
 date: 2024-07-15T18:00:00+03:00
 draft: false
----
-
-## Nibbles Machine
-
 ---
 
 Nibbles is a fairly simple machine, however with the inclusion of a login blacklist, it is a fair bit more challenging to find valid credentials. Luckily, a username can be enumerated and guessing the correct password does not take long for most.
@@ -80,11 +76,11 @@ There was no useful information from this scan so we can continue enumerating th
 
 As soon as we type the target IP on our browser the website displayed it's just a simple h1 tag with the phrase "Hello World". We assume there's nothing interesting here...
 
-{{< image src="/nibbles-machine/1.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/1.png" alt="website-enum" position="center" style="border-radius: 8px;" >}}
 
 But let's remember that there could always be something else hidden out there, especially if we see a cheesy message like “Hello World”, so why not check the source code of the page to see if we can find any clues.
 
-{{< image src="/nibbles-machine/2.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/2.png" alt="website-enum" position="center" style="border-radius: 8px;" >}}
 
 And there we have it, it seems that our intuition was right. So we could write down that address and see if we can find anything.
 
@@ -94,7 +90,7 @@ Sometimes developers leave messages between themselves while they are building t
 
 As soon as we type /nibbleblog after the IP address the browser takes us to a new page where we seem to find an administration panel or something similar. Let's save it for later, it may be useful.
 
-{{< image src="/nibbles-machine/3.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/3.png" alt="website-enum" position="center" style="border-radius: 8px;" >}}
 
 Something that would be very useful is to know what is nibbleblog, googling it we find the repository at <https://github.com/dignajar/nibbleblog> and its creator tells us that nibbleblog is: Easy, fast and free CMS Blog. All you need is PHP to work.
 
@@ -146,7 +142,7 @@ If we enter the site <www.exploit-db.com/exploits/38489> and read the source cod
 
 This could be helpful later on when we list the files contained in the website. What we still need to know is what version is running on our target. So let's write it down in our TODO list.
 
-{{< image src="/nibbles-machine/5.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/5.png" alt="exploit-db website" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -170,19 +166,19 @@ We can also use other flags if needed like:
 - -b: Status codes to blacklist (ignore)
 - -s: Status codes to whitelist (only show these)
 
-{{< image src="/nibbles-machine/6.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/6.png" alt="gobuster results" position="center" style="border-radius: 8px;" >}}
 
 From the result obtained, some directories/files stand out at first sight: /admin , /admin.php and /README. Let's see what we can find there.
 
 #### /README
 
-{{< image src="/nibbles-machine/7.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/7.png" alt="readme finding" position="center" style="border-radius: 8px;" >}}
 
 From the information shown in the README we are 100% sure that the website is vulnerable to the exploit found at <www.exploits-db.com>.
 
 #### /admin
 
-{{< image src="/nibbles-machine/8.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/8.png" alt="admin finding" position="center" style="border-radius: 8px;" >}}
 
 In this directory I have spent a long time looking through all the directories and files but there is nothing that is interesting.
 
@@ -194,7 +190,7 @@ One thing we could do is try to guess the password and username using the most c
 
 But let's remember that we were warned that a blacklisting service is running in the background. So a brute force attack would be out of the question.
 
-{{< image src="/nibbles-machine/9.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/9.png" alt="admin login form" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -202,13 +198,13 @@ But let's remember that we were warned that a blacklisting service is running in
 
 If we look again at the gobuster output we can see that another overlooked directory is available: /content . Let's see what it has.
 
-{{< image src="/nibbles-machine/10.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/10.png" alt="gobuster result 2" position="center" style="border-radius: 8px;" >}}
 
 #### /private
 
 We went directly to the /private directory because it is more likely to find something of interest here than in the public/ or tmp/ directories.
 
-{{< image src="/nibbles-machine/11.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/11.png" alt="private directory finding" position="center" style="border-radius: 8px;" >}}
 
 Looks like there are some nice XML files here!
 
@@ -224,7 +220,7 @@ Looks like there are some nice XML files here!
 
 A user called admin exist, also we can confirm again about the blacklist function.
 
-{{< image src="/nibbles-machine/12.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/12.png" alt="xml files" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -232,7 +228,7 @@ A user called admin exist, also we can confirm again about the blacklist functio
 
 We found an email for the admin and the email used for nibbleblog
 
-{{< image src="/nibbles-machine/13.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/13.png" alt="xml files" position="center" style="border-radius: 8px;" >}}
 
 ### Getting the admin password
 
@@ -240,7 +236,7 @@ Something that catches our attention once we read the whole xml document is that
 
 So going back to the login page (/admin.php) and typing nibbles as the password we got access to the admin dashboard
 
-{{< image src="/nibbles-machine/14.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/14.png" alt="admin login success" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -281,14 +277,14 @@ Once this is done we only have to upload the file and see if we get the desired 
 
 ---
 
-{{< image src="/nibbles-machine/15.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/15.png" alt="exploiting" position="center" style="border-radius: 8px;" >}}
 
 ---
 
 Now we must find where the file was hosted once it was successfully uploaded. And if we remember from the listing we did with gobuster there was a directory private/ with the directory plugins/ inside. So let's see if our file was saved there.
 
 ---
-{{< image src="/nibbles-machine/16.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/16.png" alt="exploiting" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -296,7 +292,7 @@ went to my_image/
 
 ---
 
-{{< image src="/nibbles-machine/17.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/17.png" alt="exploiting" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -305,10 +301,10 @@ And there is the file we uploaded, now let's try to run it and see if it works. 
 ---
 
 Browser
-{{< image src="/nibbles-machine/18.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/18.png" alt="exploiting" position="center" style="border-radius: 8px;" >}}
 
 Terminal
-{{< image src="/nibbles-machine/19.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/19.png" alt="exploiting" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -316,7 +312,7 @@ Terminal
 
 Now that we know that the PHP code executes perfectly we can modify it to obtain a reverse shell.
 
-{{< image src="/nibbles-machine/20.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/20.png" alt="reverse shell" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -334,7 +330,7 @@ Once executed if everything went well we should get the reverse shell and theref
 
 ---
 
-{{< image src="/nibbles-machine/21.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/21.png" alt="reverse shell" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -352,7 +348,7 @@ python3 'import pty; pty.spawn("/bin/bash")'
 
 Now that we are inside the machine we can go to the user's home folder and there we will find the file containing the flag.
 
-{{< image src="/nibbles-machine/22.png" alt="first image" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../nibbles-machine/22.png" alt="post exploit" position="center" style="border-radius: 8px;" >}}
 
 ---
 

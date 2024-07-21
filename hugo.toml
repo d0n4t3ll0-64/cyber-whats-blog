@@ -1,6 +1,6 @@
-baseURL = 'https://d0n4t3ll0-64.github.io/cyber-whats-public/'
+baseURL = 'https://d0n4t3ll0-64.github.io/d0natell0/'
 languageCode = 'en-us'
-title = 'Cyber Whats'
+title = "Donatello's Blog"
 theme = 'hello-friend-ng'
 paginate = 10
 
@@ -9,11 +9,11 @@ paginate = 10
   dateformShort = "Jan 2"
   dateformNum = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-  backgroundImage = "/bg-1.jpg"
-  enableThemeToggle = true
+  # backgroundImage = "/bg-1.jpg"
+  # enableThemeToggle = true
  
   # Subtitle for home
-  homeSubtitle = "Find what you need.. Hack what you want..."
+  homeSubtitle = "Recent Posts"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -23,7 +23,7 @@ paginate = 10
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /home/"
+    logoText     = "D0natell0's Blog"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -36,7 +36,7 @@ paginate = 10
 
 
   [params.portrait]
-     path     = "/whats-logo.png"
+     path     = "./nasa-yusaki.jpg"
      alt      = "Portrait"
      maxWidth = "100px"
 
@@ -49,17 +49,17 @@ paginate = 10
     topText = []
     bottomText = [
       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by d0n4t3ll0"
+      "Made with &#10084; by d0natell0"
     ]
 
   [languages]
     [languages.en.params.logo]
-      logoText = "Cyber WHats"
+      # logoText = "d0natell0"
       logoHomeLink = ""
 
 [[menu.main]]
     identifier = "blog"
-    name       = "Blog"
+    name       = "Posts"
     url        = "/posts"
 
 [[menu.main]]
@@ -69,5 +69,5 @@ paginate = 10
 
 [[menu.main]]
     identifier = "news"
-    name       = "Cyber News"
+    name       = "News"
     url        = "/news"

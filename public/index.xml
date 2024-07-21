@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cyber Whats</title>
-    <link>https://d0n4t3ll0-64.github.io/cyber-whats-public/</link>
-    <description>Recent content on Cyber Whats</description>
+    <title>Donatello&#39;s Blog</title>
+    <link>http://localhost:1313/d0natell0/</link>
+    <description>Recent content on Donatello&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Jul 2024 00:29:00 +0300</lastBuildDate>
-    <atom:link href="https://d0n4t3ll0-64.github.io/cyber-whats-public/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/d0natell0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crowdstrike Blowup</title>
-      <link>https://d0n4t3ll0-64.github.io/cyber-whats-public/news/news-crowdstrike-hack/</link>
+      <link>http://localhost:1313/d0natell0/news/news-crowdstrike-hack/</link>
       <pubDate>Sat, 20 Jul 2024 00:29:00 +0300</pubDate>
-      <guid>https://d0n4t3ll0-64.github.io/cyber-whats-public/news/news-crowdstrike-hack/</guid>
+      <guid>http://localhost:1313/d0natell0/news/news-crowdstrike-hack/</guid>
       <description>Massive Crash: Did Layer 8 Goof Up Again? So get this - airports, banks, and a bunch of other places totally crashed today. Everyone&amp;rsquo;s first thought? Massive cyber attack, right? Nope, not this time.&#xA;Picture this: Workers all over the world show up, fire up their computers, and bam! Blue screen of death. Turns out, according to CrowdStrike, it was a botched update that made Windows systems go haywire, no matter where the computer was.</description>
     </item>
     <item>
       <title>Lame machine HTB</title>
-      <link>https://d0n4t3ll0-64.github.io/cyber-whats-public/posts/2024/lame-machine-htb/</link>
+      <link>http://localhost:1313/d0natell0/posts/2024/lame-machine-htb/</link>
       <pubDate>Wed, 17 Jul 2024 22:42:00 +0300</pubDate>
-      <guid>https://d0n4t3ll0-64.github.io/cyber-whats-public/posts/2024/lame-machine-htb/</guid>
+      <guid>http://localhost:1313/d0natell0/posts/2024/lame-machine-htb/</guid>
       <description>Introduction Lame is a beginner-level machine from Hack The Box, perfect for those starting their journey in penetration testing. This walkthrough will guide you through the process of compromising the machine, explaining each step and tool used along the way.&#xA;Target IP: 10.129.79.228&#xA;Enumeration Enumeration is the first and crucial step in any penetration test. It involves gathering information about the target system to identify potential vulnerabilities.&#xA;Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports and services:</description>
     </item>
     <item>
       <title>Nibbles Machine HTB</title>
-      <link>https://d0n4t3ll0-64.github.io/cyber-whats-public/posts/2024/nibbles-machine-htb/</link>
+      <link>http://localhost:1313/d0natell0/posts/2024/nibbles-machine-htb/</link>
       <pubDate>Mon, 15 Jul 2024 18:00:00 +0300</pubDate>
-      <guid>https://d0n4t3ll0-64.github.io/cyber-whats-public/posts/2024/nibbles-machine-htb/</guid>
-      <description>Nibbles Machine Nibbles is a fairly simple machine, however with the inclusion of a login blacklist, it is a fair bit more challenging to find valid credentials. Luckily, a username can be enumerated and guessing the correct password does not take long for most.&#xA;Enumeration We need to start by mapping the target network. To do this, we&amp;rsquo;ll use Nmap with several flags:&#xA;The -sV flag helps us get the service versions running on the ports.</description>
+      <guid>http://localhost:1313/d0natell0/posts/2024/nibbles-machine-htb/</guid>
+      <description>Nibbles is a fairly simple machine, however with the inclusion of a login blacklist, it is a fair bit more challenging to find valid credentials. Luckily, a username can be enumerated and guessing the correct password does not take long for most.&#xA;Enumeration We need to start by mapping the target network. To do this, we&amp;rsquo;ll use Nmap with several flags:&#xA;The -sV flag helps us get the service versions running on the ports.</description>
     </item>
   </channel>
 </rss>
