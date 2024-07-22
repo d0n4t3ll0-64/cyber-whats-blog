@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/donatello-blog/</loc>
+    <lastmod>2024-07-21T23:08:55-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/donatello-blog/tools/nmap/</loc>
+    <lastmod>2024-07-21T23:08:55-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/donatello-blog/tools/pentestingtoolslist/</loc>
+    <lastmod>2024-07-21T23:08:55-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/donatello-blog/tools/</loc>
+    <lastmod>2024-07-21T23:08:55-03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/donatello-blog/tags/computer-crash/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
@@ -9,9 +21,6 @@
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/donatello-blog/news/news-crowdstrike-hack/</loc>
-    <lastmod>2024-07-20T00:29:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/donatello-blog/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/donatello-blog/tags/news/</loc>
