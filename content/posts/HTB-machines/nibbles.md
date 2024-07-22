@@ -1,6 +1,6 @@
 ---
 title: 'Nibbles Machine HTB'
-cover: ./nibbles-machine/nibbles-logo.png
+cover: ./nibbles-machine/Nibbles.png
 date: 2024-07-15T18:00:00+03:00
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: Lame machine HTB
-cover: ./lame-machine/lame-logo.png
+cover: ./lame-machine/Lame.png
 date: 2024-07-17T22:42:00+03:00
 draft: false
 ---

@@ -1,4 +1,4 @@
-baseURL = 'https://d0n4t3ll0-64.github.io/d0natell0/'
+baseURL = 'https://d0n4t3ll0-64.github.io/donatello-blog/'
 languageCode = 'en-us'
 title = "Donatello's Blog"
 theme = 'hello-friend-ng'
