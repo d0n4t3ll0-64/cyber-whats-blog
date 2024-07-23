@@ -13,7 +13,7 @@
       <link>http://localhost:1313/donatello-blog/tools/nmap/</link>
       <pubDate>Sun, 21 Jul 2024 23:08:55 -0300</pubDate>
       <guid>http://localhost:1313/donatello-blog/tools/nmap/</guid>
-      <description>Under construction</description>
+      <description>What is Nmap ? Nmap is a free and open source network scanner that can be used to discover hosts on the local network or on the Internet. It can be used to find open ports, services, and versions running on the ports.&#xA;To get a comprehensive view of the target&amp;rsquo;s network structure and services, there are several flags that can be used to customize the scan like -p (to specify ports), -sV (to get service versions), -oA (to generate output), among others that will discuss later.</description>
     </item>
     <item>
       <title>Pentesting Tools List</title>
