@@ -11,7 +11,7 @@ draft: false
 
 ## Massive Crash: Did Layer 8 Goof Up Again?
 
-{{< image src="../../News-posts/crowdstrike.webp" alt="crowdstrike blowup" position="center" style="border-radius: 8px;">}}
+{{< image src="../../../News-posts/crowdstrike.webp" alt="crowdstrike blowup" position="center" style="border-radius: 8px;">}}
 
 So get this - airports, banks, and a bunch of other places totally crashed today. Everyone's first thought? Massive cyber attack, right? Nope, not this time.
 

@@ -1,6 +1,6 @@
 baseURL = 'https://d0n4t3ll0-64.github.io/donatello-blog/'
 languageCode = 'en-us'
-title = "Donatello's Blog"
+title = "d0natell0's Blog"
 theme = 'hello-friend-ng'
 paginate = 10
 
@@ -20,6 +20,13 @@ paginate = 10
 
   [permalinks]
   posts = "/posts/:year/:title/"
+  tools = "/tools/:year/:title/"
+  news = "/news/:year/:title/"
+
+  [taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 
   [params.logo]
     logoMark     = ">"

@@ -214,8 +214,6 @@ This section documents the dozen or so port scan techniques supported by Nmap. *
 - *- -sN* (NULL scan)
 - *- -sF* (FIN scan)
 - *- -sX* (XMAS scan)
-- *- -sY* (SCTP INIT scan)
-- *- -sZ* (SCTP COOKIE-ECHO scan)
 
 ### Most used port scan techniques with their descriptions
 
@@ -231,15 +229,48 @@ TCP connect scan is the default TCP scan type when SYN scan is not an option. Th
 
 **When SYN scan is available, it is usually a better choice**. Nmap has less control over the high level connect call than with raw packets, making it less efficient. The system call completes connections to open target ports rather than performing the half-open reset that SYN scan does. *Not only does this take longer and require more packets to obtain the same information, but target machines are more likely to log the connection*. A decent IDS will catch either, but most machines have no such alarm system. Many services on your average Unix system will add a note to syslog, and sometimes a cryptic error message, when Nmap connects and then closes the connection without sending data. Truly pathetic services crash when this happens, though that is uncommon. An administrator who sees a bunch of connection attempts in her logs from a single system should know that she has been connect scanned.
 
+#### [ -sU (UDP scan) ]
+
+While most popular services on the Internet run over the TCP protocol, UDP services are widely deployed. *DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) are three of the most common*. Because UDP scanning is generally slower and more difficult than TCP, some security auditors ignore these ports. This is a mistake, as exploitable UDP services are quite common and attackers certainly don't ignore the whole protocol. Fortunately, Nmap can help inventory UDP ports.
+
+*UDP scan is activated with the -sU option. It can be combined with a TCP scan type such as SYN scan (-sS) to check both protocols during the same run.*
+
+**UDP** scan works by sending a UDP packet to every targeted port. For some common ports such as 53 and 161, a protocol-specific payload is sent to increase response rate, but for most ports the packet is empty unless the --data, --data-string, or --data-length options are specified. *If an ICMP port unreachable error (type 3, code 3) is returned, the port is closed. Other ICMP unreachable errors (type 3, codes 0, 1, 2, 9, 10, or 13) mark the port as filtered.* Occasionally, a service will respond with a UDP packet, proving that it is open. If no response is received after retransmissions, the port is classified as open|filtered. This means that the port could be open, or perhaps packet filters are blocking the communication. *Version detection (-sV) can be used to help differentiate the truly open ports from the filtered ones.*
+
+#### [ -sA (TCP ACK scan) ]
+
+This scan is different than the others discussed so far, *it is used to map out firewall rule sets, determining whether they are stateful or not and which ports are filtered.*
+
+*The ACK scan probe packet has only the ACK flag set* (unless you use --scanflags). When scanning unfiltered systems, *open and closed ports* will both return a RST packet. *Nmap then labels them as unfiltered*, meaning that they are reachable by the ACK packet, but whether they are open or closed is undetermined. *Ports that don't respond, or send certain ICMP error messages back (type 3, code 0, 1, 2, 3, 9, 10, or 13), are labeled filtered.*
+
+#### [ -sN (NULL scan), -sF (FIN scan), -sX (XMAS scan) ]
+
+*These three scan types exploit a subtle loophole in the TCP RFC to differentiate between open and closed ports.* Page 65 of RFC 793 says that “if the [ destination ] port state is CLOSED .... an incoming segment not containing a RST causes a RST to be sent in response.” Then the next page discusses packets sent to open ports without the SYN, RST, or ACK bits set, stating that: “you are unlikely to get here, but if you do, drop the segment, and return.”
+
+When scanning systems compliant with this RFC text, *any packet not containing SYN, RST, or ACK bits will result in a returned RST* *if the port is closed and no response at all if the port is open*. As long as none of those three bits are included, any combination of the other three (FIN, PSH, and URG) are OK. Nmap exploits this with three scan types:
+
+- *Null scan (-sN)*
+    Does not set any bits (TCP flag header is 0)
+
+- *FIN scan (-sF)*
+    Sets just the TCP FIN bit.
+
+- *Xmas scan (-sX)*
+    Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.
+
+*The key advantage to these scan types is that they can sneak through certain non-stateful firewalls and packet filtering routers. Another advantage is that these scan types are a little more stealthy than even a SYN scan.* Don't count on this though—most modern IDS products can be configured to detect them. *The big downside is that not all systems follow RFC 793 to the letter. A number of systems send RST responses to the probes regardless of whether the port is open or not. This causes all of the ports to be labeled closed.* This scan does work against most Unix-based systems though. *Another downside of these scans is that they can't distinguish open ports from certain filtered ones, leaving you with the response open|filtered.*
+
 ---
 
-### Nmap scripts
+### Nmap scripting engine
 
-Nmap offers a variety of pre-configured ready-to-use scripts, these are divided into different categories and can be used by using the --script=< script-name > flag or by using -sC. Nmap sends the scripts considered to be the most secure and least intrusive, the abbreviation refers to --script=default.
+*Nmap offers a variety of pre-configured ready-to-use scripts, these are divided into different categories and can be used by using the --script=< script-name > flag or by using -sC*. Nmap sends the scripts considered to be the *most secure and least intrusive*, the abbreviation refers to --script=default.
 
 >Tip: you can join certain flags in the same line, for example -sV and -sC in -sCV . Not all of them can be put together in this way, e.g. -O.
 
-Let's now try to perform a basic script scan on the target IP and the port that is open.
+---
+
+#### Let's now try to perform a basic script scan on the target IP and the port that is open
 
 ```bash
 ❯ sudo nmap -p23 -sVC 10.129.81.24
@@ -256,3 +287,26 @@ Nmap done: 1 IP address (1 host up) scanned in 37.94 seconds
 ```
 
 As we can see by performing a service version scan (-sV) along with a basic script scan we were now able to obtain the service and its version. Also if we look well the result we can affirm that we are in front of a Linux machine!
+
+---
+
+The **NSE** is one of the most powerful features of Nmap, allowing users*to extend its functionality through Lua scripts*.
+
+**Script categories:**
+
+- *auth*: Authentication
+- *broadcast*: Network discovery via broadcast
+- *brute*: Brute force
+- *default*: Scripts executed by default
+- *discovery*: Discovery of additional information
+- *dos*: Denial of service vulnerability detection
+- *exploit*: Exploitation of vulnerabilities
+- *external*: Scripts that use external resources
+- *fuzzer*: Fuzzing scripts
+- *intrusive*: Scripts that can be considered intrusive
+- *malware*: Malware detection
+- *safe*: Scripts that are considered safe and non-intrusive
+- *version*: Advanced version detection
+- *vuln*: Detection of known vulnerabilities
+
+**In short, learning to use Nmap takes time and you may always learn something new as you encounter new challenges. The important thing to understand is that Nmap is used to scan networks and find ports and services running on them, at first it can be overwhelming the amount of flags that can be used to perform a scan, but remember that no one is born knowing and it is a matter of practice to become a master of ethical hacking.**

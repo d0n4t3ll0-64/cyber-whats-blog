@@ -5,10 +5,10 @@
     <loc>http://localhost:1313/donatello-blog/</loc>
     <lastmod>2024-07-21T23:08:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tools/nmap/</loc>
+    <loc>http://localhost:1313/donatello-blog/tools/2024/network-maper-nmap/</loc>
     <lastmod>2024-07-21T23:08:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tools/pentestingtoolslist/</loc>
+    <loc>http://localhost:1313/donatello-blog/tools/2024/pentesting-tools-list/</loc>
     <lastmod>2024-07-21T23:08:55-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/donatello-blog/tools/</loc>
@@ -20,7 +20,7 @@
     <loc>http://localhost:1313/donatello-blog/tags/crowdstrike/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/news/news-crowdstrike-hack/</loc>
+    <loc>http://localhost:1313/donatello-blog/news/2024/crowdstrike-blowup/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/donatello-blog/tags/news/</loc>
@@ -41,6 +41,8 @@
     <loc>http://localhost:1313/donatello-blog/posts/2024/nibbles-machine-htb/</loc>
     <lastmod>2024-07-15T18:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/categories/</loc>
+    <loc>http://localhost:1313/donatello-blog/blog/</loc>
+  </url><url>
+    <loc>http://localhost:1313/donatello-blog/series/</loc>
   </url>
 </urlset>

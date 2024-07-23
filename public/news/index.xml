@@ -1,19 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>News on Donatello&#39;s Blog</title>
-    <link>http://localhost:1313/donatello-blog/news/</link>
-    <description>Recent content in News on Donatello&#39;s Blog</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 20 Jul 2024 00:29:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/donatello-blog/news/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Crowdstrike Blowup</title>
-      <link>http://localhost:1313/donatello-blog/news/news-crowdstrike-hack/</link>
-      <pubDate>Sat, 20 Jul 2024 00:29:00 +0300</pubDate>
-      <guid>http://localhost:1313/donatello-blog/news/news-crowdstrike-hack/</guid>
-      <description>Massive Crash: Did Layer 8 Goof Up Again? So get this - airports, banks, and a bunch of other places totally crashed today. Everyone&amp;rsquo;s first thought? Massive cyber attack, right? Nope, not this time.&#xA;Picture this: Workers all over the world show up, fire up their computers, and bam! Blue screen of death. Turns out, according to CrowdStrike, it was a botched update that made Windows systems go haywire, no matter where the computer was.</description>
-    </item>
-  </channel>
+    <channel>
+        <title>News on d0natell0&#39;s Blog</title>
+        <link>http://localhost:1313/donatello-blog/news/</link>
+        <description>Recent content in News on d0natell0&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 20 Jul 2024 00:29:00 +0300</lastBuildDate>
+        <atom:link href="http://localhost:1313/donatello-blog/news/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Crowdstrike Blowup</title>
+            <link>http://localhost:1313/donatello-blog/news/2024/crowdstrike-blowup/</link>
+            <pubDate>Sat, 20 Jul 2024 00:29:00 +0300</pubDate>
+            
+            <guid>http://localhost:1313/donatello-blog/news/2024/crowdstrike-blowup/</guid>
+            <description>Massive Crash: Did Layer 8 Goof Up Again? So get this - airports, banks, and a bunch of other places totally crashed today. Everyone&amp;rsquo;s first thought? Massive cyber attack, right? Nope, not this time.
+Picture this: Workers all over the world show up, fire up their computers, and bam! Blue screen of death. Turns out, according to CrowdStrike, it was a botched update that made Windows systems go haywire, no matter where the computer was.</description>
+            <content type="html"><![CDATA[<hr>
+<h2 id="massive-crash-did-layer-8-goof-up-again">Massive Crash: Did Layer 8 Goof Up Again?</h2>
+
+    <img src="../../../News-posts/crowdstrike.webp"  alt="crowdstrike blowup"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>So get this - airports, banks, and a bunch of other places totally crashed today. Everyone&rsquo;s first thought? Massive cyber attack, right? Nope, not this time.</p>
+<p>Picture this: Workers all over the world show up, fire up their computers, and bam! Blue screen of death. Turns out, according to CrowdStrike, it was a botched update that made Windows systems go haywire, no matter where the computer was. If you&rsquo;ve got CrowdStrike stuff installed, tough luck – you&rsquo;re in for a headache.</p>
+<p>Here&rsquo;s the kicker: We&rsquo;ve been dealing with some wild cybersecurity drama lately. Remember the SnowFlake hack? Or those self-proclaimed &ldquo;gay hackers and furries&rdquo; doing their thing? And let&rsquo;s not forget Microsoft getting hit. But this time? It&rsquo;s what the tech world calls a Layer 8 problem - aka, human error. Something went seriously wrong with that CrowdStrike update, and it&rsquo;s pretty embarrassing for a company that got famous for catching Russian hackers trying to mess with the Democratic National Committee back in 2016.</p>
+<p>For now, CrowdStrike&rsquo;s telling everyone affected that they&rsquo;re scrambling to fix this mess. They&rsquo;re cooking up some patches to try and sort it out. Windows chimed in too, basically saying, &ldquo;Yeah, we see the problem,&rdquo; but not much else.</p>
+<p>One thing&rsquo;s for sure: IT folks around the world are in for some long nights. Hope they&rsquo;ve got their coffee ready!</p>
+<hr>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>
