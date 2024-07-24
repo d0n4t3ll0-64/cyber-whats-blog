@@ -2,47 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/donatello-blog/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/</loc>
     <lastmod>2024-07-21T23:08:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tools/2024/network-maper-nmap/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/pentesting-tools/nmap/</loc>
     <lastmod>2024-07-21T23:08:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tools/2024/pentesting-tools-list/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/pentesting-tools/pentestingtoolslist/</loc>
     <lastmod>2024-07-21T23:08:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tools/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/pentesting-tools/</loc>
     <lastmod>2024-07-21T23:08:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tags/computer-crash/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/tags/computer-crash/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tags/crowdstrike/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/tags/crowdstrike/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/news/2024/crowdstrike-blowup/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/news/2024/crowdstrike-blowup/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tags/news/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/tags/news/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/news/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/news/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/tags/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/tags/</loc>
     <lastmod>2024-07-20T00:29:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/posts/2024/lame-machine-htb/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/lame-machine-htb/</loc>
     <lastmod>2024-07-17T22:42:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/posts/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/posts/</loc>
     <lastmod>2024-07-17T22:42:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/posts/2024/nibbles-machine-htb/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/nibbles-machine-htb/</loc>
     <lastmod>2024-07-15T18:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/donatello-blog/blog/</loc>
-  </url><url>
-    <loc>http://localhost:1313/donatello-blog/series/</loc>
+    <loc>https://d0n4t3ll0-64.github.io/donatello-blog/categories/</loc>
   </url>
 </urlset>

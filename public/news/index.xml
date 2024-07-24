@@ -1,25 +1,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>News on d0natell0&#39;s Blog</title>
-        <link>http://localhost:1313/donatello-blog/news/</link>
+        <link>https://d0n4t3ll0-64.github.io/donatello-blog/news/</link>
         <description>Recent content in News on d0natell0&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Sat, 20 Jul 2024 00:29:00 +0300</lastBuildDate>
-        <atom:link href="http://localhost:1313/donatello-blog/news/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://d0n4t3ll0-64.github.io/donatello-blog/news/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Crowdstrike Blowup</title>
-            <link>http://localhost:1313/donatello-blog/news/2024/crowdstrike-blowup/</link>
+            <link>https://d0n4t3ll0-64.github.io/donatello-blog/news/2024/crowdstrike-blowup/</link>
             <pubDate>Sat, 20 Jul 2024 00:29:00 +0300</pubDate>
             
-            <guid>http://localhost:1313/donatello-blog/news/2024/crowdstrike-blowup/</guid>
+            <guid>https://d0n4t3ll0-64.github.io/donatello-blog/news/2024/crowdstrike-blowup/</guid>
             <description>Massive Crash: Did Layer 8 Goof Up Again? So get this - airports, banks, and a bunch of other places totally crashed today. Everyone&amp;rsquo;s first thought? Massive cyber attack, right? Nope, not this time.
 Picture this: Workers all over the world show up, fire up their computers, and bam! Blue screen of death. Turns out, according to CrowdStrike, it was a botched update that made Windows systems go haywire, no matter where the computer was.</description>
             <content type="html"><![CDATA[<hr>
 <h2 id="massive-crash-did-layer-8-goof-up-again">Massive Crash: Did Layer 8 Goof Up Again?</h2>
 
-    <img src="../../../News-posts/crowdstrike.webp"  alt="crowdstrike blowup"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../news-posts-img/crowdstrike.webp"  alt="crowdstrike blowup"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>So get this - airports, banks, and a bunch of other places totally crashed today. Everyone&rsquo;s first thought? Massive cyber attack, right? Nope, not this time.</p>

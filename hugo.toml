@@ -23,11 +23,6 @@ paginate = 10
   tools = "/tools/:year/:title/"
   news = "/news/:year/:title/"
 
-  [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
-
   [params.logo]
     logoMark     = ">"
     logoText     = "D0natell0's Blog"
@@ -72,7 +67,7 @@ paginate = 10
 [[menu.main]]
     identifier = "tools"
     name       = "Tools"
-    url        = "/tools"
+    url        = "/pentesting-tools"
 
 [[menu.main]]
     identifier = "news"

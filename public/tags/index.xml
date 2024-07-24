@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on d0natell0&#39;s Blog</title>
-    <link>http://localhost:1313/donatello-blog/tags/</link>
+    <link>https://d0n4t3ll0-64.github.io/donatello-blog/tags/</link>
     <description>Recent content in Tags on d0natell0&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Jul 2024 00:29:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/donatello-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://d0n4t3ll0-64.github.io/donatello-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer-Crash</title>
-      <link>http://localhost:1313/donatello-blog/tags/computer-crash/</link>
+      <link>https://d0n4t3ll0-64.github.io/donatello-blog/tags/computer-crash/</link>
       <pubDate>Sat, 20 Jul 2024 00:29:00 +0300</pubDate>
-      <guid>http://localhost:1313/donatello-blog/tags/computer-crash/</guid>
+      <guid>https://d0n4t3ll0-64.github.io/donatello-blog/tags/computer-crash/</guid>
       <description></description>
     </item>
     <item>
       <title>Crowdstrike</title>
-      <link>http://localhost:1313/donatello-blog/tags/crowdstrike/</link>
+      <link>https://d0n4t3ll0-64.github.io/donatello-blog/tags/crowdstrike/</link>
       <pubDate>Sat, 20 Jul 2024 00:29:00 +0300</pubDate>
-      <guid>http://localhost:1313/donatello-blog/tags/crowdstrike/</guid>
+      <guid>https://d0n4t3ll0-64.github.io/donatello-blog/tags/crowdstrike/</guid>
       <description></description>
     </item>
     <item>
       <title>News</title>
-      <link>http://localhost:1313/donatello-blog/tags/news/</link>
+      <link>https://d0n4t3ll0-64.github.io/donatello-blog/tags/news/</link>
       <pubDate>Sat, 20 Jul 2024 00:29:00 +0300</pubDate>
-      <guid>http://localhost:1313/donatello-blog/tags/news/</guid>
+      <guid>https://d0n4t3ll0-64.github.io/donatello-blog/tags/news/</guid>
       <description></description>
     </item>
   </channel>

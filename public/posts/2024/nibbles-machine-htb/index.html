@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/donatello-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=donatello-blog/livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -12,7 +12,7 @@ The -sV flag helps us get the service versions running on the ports." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/donatello-blog/posts/2024/nibbles-machine-htb/" />
+<link rel="canonical" href="https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/nibbles-machine-htb/" />
 
 
     <title>
@@ -29,14 +29,13 @@ The -sV flag helps us get the service versions running on the ports." />
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/donatello-blog/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/donatello-blog/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/donatello-blog/favicon-16x16.png">
-    <link rel="manifest" href="/donatello-blog/site.webmanifest">
-    <link rel="mask-icon" href="/donatello-blog/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="/donatello-blog/favicon.ico">
-    <meta name="msapplication-TileColor" content="">
-
+<link rel="apple-touch-icon" sizes="180x180" href="/donatello-blog/%20apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/donatello-blog/%20favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/donatello-blog/%20favicon-16x16.png">
+<link rel="manifest" href="/donatello-blog/%20site.webmanifest">
+<link rel="mask-icon" href="/donatello-blog/%20safari-pinned-tab.svg" color="">
+<link rel="shortcut icon" href="/donatello-blog/%20favicon.ico">
+<meta name="msapplication-TileColor" content="">
 
 
   <meta itemprop="name" content="Nibbles Machine HTB">
@@ -53,19 +52,6 @@ The -sV flag helps us get the service versions running on the ports.">
 Enumeration We need to start by mapping the target network. To do this, we’ll use Nmap with several flags:
 The -sV flag helps us get the service versions running on the ports.">
 
-
-
-    <meta property="og:url" content="http://localhost:1313/donatello-blog/posts/2024/nibbles-machine-htb/">
-  <meta property="og:site_name" content="d0natell0&#39;s Blog">
-  <meta property="og:title" content="Nibbles Machine HTB">
-  <meta property="og:description" content="Nibbles is a fairly simple machine, however with the inclusion of a login blacklist, it is a fair bit more challenging to find valid credentials. Luckily, a username can be enumerated and guessing the correct password does not take long for most.
-Enumeration We need to start by mapping the target network. To do this, we’ll use Nmap with several flags:
-The -sV flag helps us get the service versions running on the ports.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-07-15T18:00:00+03:00">
-    <meta property="article:modified_time" content="2024-07-15T18:00:00+03:00">
 
 
 
@@ -112,7 +98,7 @@ The -sV flag helps us get the service versions running on the ports.">
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/donatello-blog/news">News</a></li><li><a href="/donatello-blog/posts">Posts</a></li><li><a href="/donatello-blog/tools">Tools</a></li>
+    <ul class="menu__inner"><li><a href="/donatello-blog/news">News</a></li><li><a href="/donatello-blog/posts">Posts</a></li><li><a href="/donatello-blog/pentesting-tools">Tools</a></li>
     </ul>
 </nav>
 
@@ -151,7 +137,7 @@ The -sV flag helps us get the service versions running on the ports.">
     
     <div class="post-header">
       
-      <img src="http://localhost:1313/donatello-blog/nibbles-machine/Nibbles.png" alt="Nibbles Machine HTB" />
+      <img src="https://d0n4t3ll0-64.github.io/donatello-blog/nibbles-machine-img/Nibbles.png" alt="Nibbles Machine HTB" />
       
 
       
@@ -219,12 +205,12 @@ The -sV flag helps us get the service versions running on the ports.">
 <h3 id="checking-the-website-running-on-port-80-http">Checking the website running on port 80 (HTTP)</h3>
 <p>As soon as we type the target IP on our browser the website displayed it&rsquo;s just a simple h1 tag with the phrase &ldquo;Hello World&rdquo;. We assume there&rsquo;s nothing interesting here&hellip;</p>
 
-    <img src="../../../nibbles-machine/1.png"  alt="website-enum"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/1.png"  alt="website-enum"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>But let&rsquo;s remember that there could always be something else hidden out there, especially if we see a cheesy message like “Hello World”, so why not check the source code of the page to see if we can find any clues.</p>
 
-    <img src="../../../nibbles-machine/2.png"  alt="website-enum"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/2.png"  alt="website-enum"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>And there we have it, it seems that our intuition was right. So we could write down that address and see if we can find anything.</p>
@@ -232,7 +218,7 @@ The -sV flag helps us get the service versions running on the ports.">
 <h4 id="checking-our-finding-nibbleblog">Checking our finding /nibbleblog/</h4>
 <p>As soon as we type /nibbleblog after the IP address the browser takes us to a new page where we seem to find an administration panel or something similar. Let&rsquo;s save it for later, it may be useful.</p>
 
-    <img src="../../../nibbles-machine/3.png"  alt="website-enum"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/3.png"  alt="website-enum"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>Something that would be very useful is to know what is nibbleblog, googling it we find the repository at <a href="https://github.com/dignajar/nibbleblog">https://github.com/dignajar/nibbleblog</a> and its creator tells us that nibbleblog is: Easy, fast and free CMS Blog. All you need is PHP to work.</p>
@@ -273,7 +259,7 @@ One way to find out this information is by using a tool called whatweb from our 
 <p>If we enter the site &lt;www.exploit-db.com/exploits/38489&gt; and read the source code we can see that it targets the URI /admin.php.</p>
 <p>This could be helpful later on when we list the files contained in the website. What we still need to know is what version is running on our target. So let&rsquo;s write it down in our TODO list.</p>
 
-    <img src="../../../nibbles-machine/5.png"  alt="exploit-db website"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/5.png"  alt="exploit-db website"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -293,19 +279,19 @@ It should be noted that there are many other tools that perform a similar functi
 <li>-s: Status codes to whitelist (only show these)</li>
 </ul>
 
-    <img src="../../../nibbles-machine/6.png"  alt="gobuster results"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/6.png"  alt="gobuster results"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>From the result obtained, some directories/files stand out at first sight: /admin , /admin.php and /README. Let&rsquo;s see what we can find there.</p>
 <h4 id="readme">/README</h4>
 
-    <img src="../../../nibbles-machine/7.png"  alt="readme finding"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/7.png"  alt="readme finding"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>From the information shown in the README we are 100% sure that the website is vulnerable to the exploit found at &lt;www.exploits-db.com&gt;.</p>
 <h4 id="admin">/admin</h4>
 
-    <img src="../../../nibbles-machine/8.png"  alt="admin finding"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/8.png"  alt="admin finding"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>In this directory I have spent a long time looking through all the directories and files but there is nothing that is interesting.</p>
@@ -314,20 +300,20 @@ It should be noted that there are many other tools that perform a similar functi
 <p>One thing we could do is try to guess the password and username using the most common combinations such as admin/admin, administrator/admin123 and others.</p>
 <p>But let&rsquo;s remember that we were warned that a blacklisting service is running in the background. So a brute force attack would be out of the question.</p>
 
-    <img src="../../../nibbles-machine/9.png"  alt="admin login form"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/9.png"  alt="admin login form"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
 <h3 id="re-checking-gobuster-output">Re-checking gobuster output</h3>
 <p>If we look again at the gobuster output we can see that another overlooked directory is available: /content . Let&rsquo;s see what it has.</p>
 
-    <img src="../../../nibbles-machine/10.png"  alt="gobuster result 2"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/10.png"  alt="gobuster result 2"  class="center"  style="border-radius: 8px;"  />
 
 
 <h4 id="private">/private</h4>
 <p>We went directly to the /private directory because it is more likely to find something of interest here than in the public/ or tmp/ directories.</p>
 
-    <img src="../../../nibbles-machine/11.png"  alt="private directory finding"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/11.png"  alt="private directory finding"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>Looks like there are some nice XML files here!</p>
@@ -340,21 +326,21 @@ It should be noted that there are many other tools that perform a similar functi
 <h4 id="usersxml">users.xml</h4>
 <p>A user called admin exist, also we can confirm again about the blacklist function.</p>
 
-    <img src="../../../nibbles-machine/12.png"  alt="xml files"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/12.png"  alt="xml files"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
 <h4 id="configxml">config.xml</h4>
 <p>We found an email for the admin and the email used for nibbleblog</p>
 
-    <img src="../../../nibbles-machine/13.png"  alt="xml files"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/13.png"  alt="xml files"  class="center"  style="border-radius: 8px;"  />
 
 
 <h3 id="getting-the-admin-password">Getting the admin password</h3>
 <p>Something that catches our attention once we read the whole xml document is that the word nibbles appears in several occasions, also we could find that the password for the admin account was set during the installation by default. So maybe the password is a generic one? Is the password for the admin user nibbles?</p>
 <p>So going back to the login page (/admin.php) and typing nibbles as the password we got access to the admin dashboard</p>
 
-    <img src="../../../nibbles-machine/14.png"  alt="admin login success"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/14.png"  alt="admin login success"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -392,21 +378,21 @@ It should be noted that there are many other tools that perform a similar functi
 <p>Once this is done we only have to upload the file and see if we get the desired result. Do not panic if you see a lot of errors in the body of the website.</p>
 <hr>
 
-    <img src="../../../nibbles-machine/15.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/15.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
 <p>Now we must find where the file was hosted once it was successfully uploaded. And if we remember from the listing we did with gobuster there was a directory private/ with the directory plugins/ inside. So let&rsquo;s see if our file was saved there.</p>
 <hr>
 
-    <img src="../../../nibbles-machine/16.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/16.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
 <p>went to my_image/</p>
 <hr>
 
-    <img src="../../../nibbles-machine/17.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/17.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -414,19 +400,19 @@ It should be noted that there are many other tools that perform a similar functi
 <hr>
 <p>Browser
 
-    <img src="../../../nibbles-machine/18.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/18.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
 
 </p>
 <p>Terminal
 
-    <img src="../../../nibbles-machine/19.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/19.png"  alt="exploiting"  class="center"  style="border-radius: 8px;"  />
 
 </p>
 <hr>
 <h3 id="getting-a-reverse-shell">Getting a Reverse shell</h3>
 <p>Now that we know that the PHP code executes perfectly we can modify it to obtain a reverse shell.</p>
 
-    <img src="../../../nibbles-machine/20.png"  alt="reverse shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/20.png"  alt="reverse shell"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -437,7 +423,7 @@ It should be noted that there are many other tools that perform a similar functi
 <p>Once executed if everything went well we should get the reverse shell and therefore access to the server.</p>
 <hr>
 
-    <img src="../../../nibbles-machine/21.png"  alt="reverse shell"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/21.png"  alt="reverse shell"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -448,7 +434,7 @@ It should be noted that there are many other tools that perform a similar functi
 <h3 id="getting-the-flag">Getting the flag</h3>
 <p>Now that we are inside the machine we can go to the user&rsquo;s home folder and there we will find the file containing the flag.</p>
 
-    <img src="../../../nibbles-machine/22.png"  alt="post exploit"  class="center"  style="border-radius: 8px;"  />
+    <img src="../../../nibbles-machine-img/22.png"  alt="post exploit"  class="center"  style="border-radius: 8px;"  />
 
 
 <hr>
@@ -521,7 +507,7 @@ It should be noted that there are many other tools that perform a similar functi
         <div class="pagination__buttons">
             
             <span class="button previous">
-                <a href="http://localhost:1313/donatello-blog/posts/2024/lame-machine-htb/">
+                <a href="https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/lame-machine-htb/">
                     <span class="button__icon">←</span>
                     <span class="button__text">Lame machine HTB</span>
                 </a>
@@ -549,9 +535,9 @@ It should be noted that there are many other tools that perform a similar functi
     <div class="footer__inner">
         <div class="footer__content">
             <span>&copy; 2024</span>
-            <span><a href="http://localhost:1313/donatello-blog/"></a></span>
+            <span><a href="https://d0n4t3ll0-64.github.io/donatello-blog/"></a></span>
             <span></span>
-            <span><a href="http://localhost:1313/donatello-blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span><a href="https://d0n4t3ll0-64.github.io/donatello-blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
             
         </div>
     </div>
