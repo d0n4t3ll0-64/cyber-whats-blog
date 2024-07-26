@@ -6,8 +6,15 @@
     <description>Recent content on d0natell0&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jul 2024 23:08:55 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2024 22:35:00 +0300</lastBuildDate>
     <atom:link href="https://d0n4t3ll0-64.github.io/donatello-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Green Horn Machine</title>
+      <link>https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/green-horn-machine/</link>
+      <pubDate>Thu, 25 Jul 2024 22:35:00 +0300</pubDate>
+      <guid>https://d0n4t3ll0-64.github.io/donatello-blog/posts/2024/green-horn-machine/</guid>
+      <description>First Steps Nmap initial scan We start the enumeration of the target with a recognition scan&#xA;sudo nmap -p- --min-rate 5000 -n -Pn 10.129.50.188 -oA first_scan_10.129.50.188 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-07-24 17:59 -03 Nmap scan report for 10.129.50.188 Host is up (0.19s latency). Not shown: 65532 closed tcp ports (reset) PORT STATE SERVICE 22/tcp open ssh 80/tcp open http 3000/tcp open ppp Nmap done: 1 IP address (1 host up) scanned in 19.</description>
+    </item>
     <item>
       <title>Network Maper (Nmap)</title>
       <link>https://d0n4t3ll0-64.github.io/donatello-blog/pentesting-tools/nmap/</link>
